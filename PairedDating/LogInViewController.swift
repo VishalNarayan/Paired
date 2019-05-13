@@ -75,7 +75,7 @@ class LogInViewController: UIViewController {
     
     
 }
-
+//This is a change.
 //
 ////Update Database with user info - unverified users are still added
 //guard let uid = Auth.auth().currentUser?.uid else{
