@@ -26,8 +26,12 @@ class RegisterViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         emailTextField.backgroundColor = UIColor.clear
+        emailTextField.tintColor = .black
+        emailTextField.textColor = UIColor.white
         passwordTextField.backgroundColor = UIColor.clear
+        passwordTextField.textColor = UIColor.white
         confirmPasswordTextField.backgroundColor = UIColor.clear
+        confirmPasswordTextField.textColor = UIColor.white
     }
 
     

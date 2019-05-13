@@ -25,7 +25,7 @@ class LogInViewController: UIViewController {
         self.performSegue(withIdentifier: "back", sender: self)
     }
     
-    func signInHandler(user: AuthDataResult, error: Error?){
+    func signInHandler(user: AuthDataResult?, error: Error?){
         if error == nil {
             //Make sure email is verified before fully signing user in
             if Auth.auth().currentUser!.isEmailVerified {
@@ -57,7 +57,7 @@ class LogInViewController: UIViewController {
         if let email = emailTextField.text, let pass = passwordTextField.text {
             //sign in user w firebase
             Auth.auth().signIn(withEmail: email, password: pass, completion: {(user, error) in
-                self.signInHandler(user: user!, error: error)})
+                self.signInHandler(user: user, error: error)})
         } else {
             //Error: check error and show message
             let alertController = UIAlertController(title: "Error", message: "Invalid entries!", preferredStyle: .alert)
@@ -75,19 +75,6 @@ class LogInViewController: UIViewController {
     
     
 }
-//This is a change.
-//
-////Update Database with user info - unverified users are still added
-//guard let uid = Auth.auth().currentUser?.uid else{
-//    print(Auth.auth().currentUser?.uid)
-//    return
-//}
-//print("what about now?")
-//let ref = Database.database().reference(fromURL: "https://paireddating-29596.firebaseio.com/")
-//let usersReference = ref.child("Users").child(uid)
-//let values = ["Email": email]
-//ref.updateChildValues(values, withCompletionBlock: {error,ref in
-//    if error != nil {
-//        print(error?.localizedDescription)
-//    }
-//})
+
+
+
