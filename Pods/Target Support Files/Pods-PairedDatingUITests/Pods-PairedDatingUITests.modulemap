@@ -1,0 +1,6 @@
+framework module Pods_PairedDatingUITests {
+  umbrella header "Pods-PairedDatingUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

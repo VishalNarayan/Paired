@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		005BE074DD0DCFFF22878362 /* Pods_PairedDatingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7D88E9BED05782F2709072 /* Pods_PairedDatingUITests.framework */; };
+		2B06AC2F2285FA9400EFB3E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B06AC2E2285FA9400EFB3E0 /* AppDelegate.swift */; };
+		2B06AC312285FA9400EFB3E0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B06AC302285FA9400EFB3E0 /* RegisterViewController.swift */; };
+		2B06AC342285FA9400EFB3E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B06AC322285FA9400EFB3E0 /* Main.storyboard */; };
+		2B06AC362285FA9700EFB3E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B06AC352285FA9700EFB3E0 /* Assets.xcassets */; };
+		2B06AC392285FA9700EFB3E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B06AC372285FA9700EFB3E0 /* LaunchScreen.storyboard */; };
+		2B06AC442285FA9700EFB3E0 /* PairedDatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B06AC432285FA9700EFB3E0 /* PairedDatingTests.swift */; };
+		2B06AC4F2285FA9700EFB3E0 /* PairedDatingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B06AC4E2285FA9700EFB3E0 /* PairedDatingUITests.swift */; };
+		2B1AEE042288EBD2006DE360 /* SetUpProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AEE032288EBD2006DE360 /* SetUpProfileViewController.swift */; };
+		2B1AEE062288FF2C006DE360 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AEE052288FF2C006DE360 /* WelcomePageViewController.swift */; };
+		2B1AEE082288FFBA006DE360 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AEE072288FFBA006DE360 /* LogInViewController.swift */; };
+		2B1AEE0C22893188006DE360 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1AEE0B22893188006DE360 /* ProfileViewController.swift */; };
+		2BB02FF12286AF290011AD2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BB02FF02286AF280011AD2C /* GoogleService-Info.plist */; };
+		85CFA9FAFDEF313E52FAB1A8 /* Pods_PairedDatingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D8DED4EFD32A04027F6F94 /* Pods_PairedDatingTests.framework */; };
+		F8E6AE1E2111E183B6002A51 /* Pods_PairedDating.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A6A18D61471BD014695DF5 /* Pods_PairedDating.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B06AC402285FA9700EFB3E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B06AC232285FA9400EFB3E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B06AC2A2285FA9400EFB3E0;
+			remoteInfo = PairedDating;
+		};
+		2B06AC4B2285FA9700EFB3E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B06AC232285FA9400EFB3E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B06AC2A2285FA9400EFB3E0;
+			remoteInfo = PairedDating;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12D8DED4EFD32A04027F6F94 /* Pods_PairedDatingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PairedDatingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B06AC2B2285FA9400EFB3E0 /* PairedDating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PairedDating.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B06AC2E2285FA9400EFB3E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B06AC302285FA9400EFB3E0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2B06AC332285FA9400EFB3E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B06AC352285FA9700EFB3E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B06AC382285FA9700EFB3E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B06AC3A2285FA9700EFB3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B06AC3F2285FA9700EFB3E0 /* PairedDatingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PairedDatingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B06AC432285FA9700EFB3E0 /* PairedDatingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairedDatingTests.swift; sourceTree = "<group>"; };
+		2B06AC452285FA9700EFB3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B06AC4A2285FA9700EFB3E0 /* PairedDatingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PairedDatingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B06AC4E2285FA9700EFB3E0 /* PairedDatingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairedDatingUITests.swift; sourceTree = "<group>"; };
+		2B06AC502285FA9700EFB3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B1AEE032288EBD2006DE360 /* SetUpProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpProfileViewController.swift; sourceTree = "<group>"; };
+		2B1AEE052288FF2C006DE360 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+		2B1AEE072288FFBA006DE360 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		2B1AEE0B22893188006DE360 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2B1AEE0D22894B4F006DE360 /* PairedDating.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PairedDating.entitlements; sourceTree = "<group>"; };
+		2BB02FF02286AF280011AD2C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4AD7F2754404A04AD74C2648 /* Pods-PairedDatingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PairedDatingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PairedDatingUITests/Pods-PairedDatingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9A7D88E9BED05782F2709072 /* Pods_PairedDatingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PairedDatingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C51B9E56937E22134488BC4F /* Pods-PairedDatingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PairedDatingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PairedDatingTests/Pods-PairedDatingTests.release.xcconfig"; sourceTree = "<group>"; };
+		C8144E54CA6FE438E834D471 /* Pods-PairedDatingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PairedDatingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PairedDatingTests/Pods-PairedDatingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDA94A08C5DD9944A4963EAB /* Pods-PairedDating.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PairedDating.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PairedDating/Pods-PairedDating.debug.xcconfig"; sourceTree = "<group>"; };
+		D5A6A18D61471BD014695DF5 /* Pods_PairedDating.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PairedDating.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F455958A37F7C7075FF22131 /* Pods-PairedDatingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PairedDatingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PairedDatingUITests/Pods-PairedDatingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCF1625C232B344A24F2D082 /* Pods-PairedDating.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PairedDating.release.xcconfig"; path = "Pods/Target Support Files/Pods-PairedDating/Pods-PairedDating.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B06AC282285FA9400EFB3E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E6AE1E2111E183B6002A51 /* Pods_PairedDating.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B06AC3C2285FA9700EFB3E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85CFA9FAFDEF313E52FAB1A8 /* Pods_PairedDatingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B06AC472285FA9700EFB3E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005BE074DD0DCFFF22878362 /* Pods_PairedDatingUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E8ACA8CF4686377CE2C0B14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5A6A18D61471BD014695DF5 /* Pods_PairedDating.framework */,
+				12D8DED4EFD32A04027F6F94 /* Pods_PairedDatingTests.framework */,
+				9A7D88E9BED05782F2709072 /* Pods_PairedDatingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B06AC222285FA9400EFB3E0 = {
+			isa = PBXGroup;
+			children = (
+				2B06AC2D2285FA9400EFB3E0 /* PairedDating */,
+				2B06AC422285FA9700EFB3E0 /* PairedDatingTests */,
+				2B06AC4D2285FA9700EFB3E0 /* PairedDatingUITests */,
+				2B06AC2C2285FA9400EFB3E0 /* Products */,
+				CFB64A6CEDBC974F75C95859 /* Pods */,
+				0E8ACA8CF4686377CE2C0B14 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2B06AC2C2285FA9400EFB3E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B06AC2B2285FA9400EFB3E0 /* PairedDating.app */,
+				2B06AC3F2285FA9700EFB3E0 /* PairedDatingTests.xctest */,
+				2B06AC4A2285FA9700EFB3E0 /* PairedDatingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B06AC2D2285FA9400EFB3E0 /* PairedDating */ = {
+			isa = PBXGroup;
+			children = (
+				2B1AEE0D22894B4F006DE360 /* PairedDating.entitlements */,
+				2BB02FF02286AF280011AD2C /* GoogleService-Info.plist */,
+				2B06AC2E2285FA9400EFB3E0 /* AppDelegate.swift */,
+				2B06AC302285FA9400EFB3E0 /* RegisterViewController.swift */,
+				2B06AC322285FA9400EFB3E0 /* Main.storyboard */,
+				2B1AEE0B22893188006DE360 /* ProfileViewController.swift */,
+				2B1AEE072288FFBA006DE360 /* LogInViewController.swift */,
+				2B1AEE052288FF2C006DE360 /* WelcomePageViewController.swift */,
+				2B1AEE032288EBD2006DE360 /* SetUpProfileViewController.swift */,
+				2B06AC352285FA9700EFB3E0 /* Assets.xcassets */,
+				2B06AC372285FA9700EFB3E0 /* LaunchScreen.storyboard */,
+				2B06AC3A2285FA9700EFB3E0 /* Info.plist */,
+			);
+			path = PairedDating;
+			sourceTree = "<group>";
+		};
+		2B06AC422285FA9700EFB3E0 /* PairedDatingTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B06AC432285FA9700EFB3E0 /* PairedDatingTests.swift */,
+				2B06AC452285FA9700EFB3E0 /* Info.plist */,
+			);
+			path = PairedDatingTests;
+			sourceTree = "<group>";
+		};
+		2B06AC4D2285FA9700EFB3E0 /* PairedDatingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B06AC4E2285FA9700EFB3E0 /* PairedDatingUITests.swift */,
+				2B06AC502285FA9700EFB3E0 /* Info.plist */,
+			);
+			path = PairedDatingUITests;
+			sourceTree = "<group>";
+		};
+		CFB64A6CEDBC974F75C95859 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDA94A08C5DD9944A4963EAB /* Pods-PairedDating.debug.xcconfig */,
+				FCF1625C232B344A24F2D082 /* Pods-PairedDating.release.xcconfig */,
+				C8144E54CA6FE438E834D471 /* Pods-PairedDatingTests.debug.xcconfig */,
+				C51B9E56937E22134488BC4F /* Pods-PairedDatingTests.release.xcconfig */,
+				F455958A37F7C7075FF22131 /* Pods-PairedDatingUITests.debug.xcconfig */,
+				4AD7F2754404A04AD74C2648 /* Pods-PairedDatingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B06AC2A2285FA9400EFB3E0 /* PairedDating */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B06AC532285FA9700EFB3E0 /* Build configuration list for PBXNativeTarget "PairedDating" */;
+			buildPhases = (
+				DD799BBB022CE323AD6F1D10 /* [CP] Check Pods Manifest.lock */,
+				2B06AC272285FA9400EFB3E0 /* Sources */,
+				2B06AC282285FA9400EFB3E0 /* Frameworks */,
+				2B06AC292285FA9400EFB3E0 /* Resources */,
+				09FD5E98905FE346A82FC33D /* [CP] Embed Pods Frameworks */,
+				A67218CD2CEC5760FF563FC9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PairedDating;
+			productName = PairedDating;
+			productReference = 2B06AC2B2285FA9400EFB3E0 /* PairedDating.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B06AC3E2285FA9700EFB3E0 /* PairedDatingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B06AC562285FA9700EFB3E0 /* Build configuration list for PBXNativeTarget "PairedDatingTests" */;
+			buildPhases = (
+				217F9D2F207016BD439D5F84 /* [CP] Check Pods Manifest.lock */,
+				2B06AC3B2285FA9700EFB3E0 /* Sources */,
+				2B06AC3C2285FA9700EFB3E0 /* Frameworks */,
+				2B06AC3D2285FA9700EFB3E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B06AC412285FA9700EFB3E0 /* PBXTargetDependency */,
+			);
+			name = PairedDatingTests;
+			productName = PairedDatingTests;
+			productReference = 2B06AC3F2285FA9700EFB3E0 /* PairedDatingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B06AC492285FA9700EFB3E0 /* PairedDatingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B06AC592285FA9700EFB3E0 /* Build configuration list for PBXNativeTarget "PairedDatingUITests" */;
+			buildPhases = (
+				0E42F768713A3B4903CEA4BA /* [CP] Check Pods Manifest.lock */,
+				2B06AC462285FA9700EFB3E0 /* Sources */,
+				2B06AC472285FA9700EFB3E0 /* Frameworks */,
+				2B06AC482285FA9700EFB3E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B06AC4C2285FA9700EFB3E0 /* PBXTargetDependency */,
+			);
+			name = PairedDatingUITests;
+			productName = PairedDatingUITests;
+			productReference = 2B06AC4A2285FA9700EFB3E0 /* PairedDatingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B06AC232285FA9400EFB3E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Vishal Narayan";
+				TargetAttributes = {
+					2B06AC2A2285FA9400EFB3E0 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					2B06AC3E2285FA9700EFB3E0 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = 2B06AC2A2285FA9400EFB3E0;
+					};
+					2B06AC492285FA9700EFB3E0 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = 2B06AC2A2285FA9400EFB3E0;
+					};
+				};
+			};
+			buildConfigurationList = 2B06AC262285FA9400EFB3E0 /* Build configuration list for PBXProject "PairedDating" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B06AC222285FA9400EFB3E0;
+			productRefGroup = 2B06AC2C2285FA9400EFB3E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B06AC2A2285FA9400EFB3E0 /* PairedDating */,
+				2B06AC3E2285FA9700EFB3E0 /* PairedDatingTests */,
+				2B06AC492285FA9700EFB3E0 /* PairedDatingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B06AC292285FA9400EFB3E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B06AC392285FA9700EFB3E0 /* LaunchScreen.storyboard in Resources */,
+				2BB02FF12286AF290011AD2C /* GoogleService-Info.plist in Resources */,
+				2B06AC362285FA9700EFB3E0 /* Assets.xcassets in Resources */,
+				2B06AC342285FA9400EFB3E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B06AC3D2285FA9700EFB3E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B06AC482285FA9700EFB3E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09FD5E98905FE346A82FC33D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PairedDating/Pods-PairedDating-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PairedDating/Pods-PairedDating-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0E42F768713A3B4903CEA4BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PairedDatingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		217F9D2F207016BD439D5F84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PairedDatingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A67218CD2CEC5760FF563FC9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PairedDating/Pods-PairedDating-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PairedDating/Pods-PairedDating-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD799BBB022CE323AD6F1D10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PairedDating-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B06AC272285FA9400EFB3E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1AEE042288EBD2006DE360 /* SetUpProfileViewController.swift in Sources */,
+				2B06AC312285FA9400EFB3E0 /* RegisterViewController.swift in Sources */,
+				2B1AEE062288FF2C006DE360 /* WelcomePageViewController.swift in Sources */,
+				2B1AEE0C22893188006DE360 /* ProfileViewController.swift in Sources */,
+				2B1AEE082288FFBA006DE360 /* LogInViewController.swift in Sources */,
+				2B06AC2F2285FA9400EFB3E0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B06AC3B2285FA9700EFB3E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B06AC442285FA9700EFB3E0 /* PairedDatingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B06AC462285FA9700EFB3E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B06AC4F2285FA9700EFB3E0 /* PairedDatingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B06AC412285FA9700EFB3E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B06AC2A2285FA9400EFB3E0 /* PairedDating */;
+			targetProxy = 2B06AC402285FA9700EFB3E0 /* PBXContainerItemProxy */;
+		};
+		2B06AC4C2285FA9700EFB3E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B06AC2A2285FA9400EFB3E0 /* PairedDating */;
+			targetProxy = 2B06AC4B2285FA9700EFB3E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B06AC322285FA9400EFB3E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B06AC332285FA9400EFB3E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B06AC372285FA9700EFB3E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B06AC382285FA9700EFB3E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B06AC512285FA9700EFB3E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B06AC522285FA9700EFB3E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B06AC542285FA9700EFB3E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDA94A08C5DD9944A4963EAB /* Pods-PairedDating.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PairedDating/PairedDating.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HN2YR2YZW9;
+				INFOPLIST_FILE = PairedDating/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VNarayan.PairedDating;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B06AC552285FA9700EFB3E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCF1625C232B344A24F2D082 /* Pods-PairedDating.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PairedDating/PairedDating.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HN2YR2YZW9;
+				INFOPLIST_FILE = PairedDating/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VNarayan.PairedDating;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2B06AC572285FA9700EFB3E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8144E54CA6FE438E834D471 /* Pods-PairedDatingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HN2YR2YZW9;
+				INFOPLIST_FILE = PairedDatingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VNarayan.PairedDatingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PairedDating.app/PairedDating";
+			};
+			name = Debug;
+		};
+		2B06AC582285FA9700EFB3E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C51B9E56937E22134488BC4F /* Pods-PairedDatingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HN2YR2YZW9;
+				INFOPLIST_FILE = PairedDatingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VNarayan.PairedDatingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PairedDating.app/PairedDating";
+			};
+			name = Release;
+		};
+		2B06AC5A2285FA9700EFB3E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F455958A37F7C7075FF22131 /* Pods-PairedDatingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HN2YR2YZW9;
+				INFOPLIST_FILE = PairedDatingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VNarayan.PairedDatingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PairedDating;
+			};
+			name = Debug;
+		};
+		2B06AC5B2285FA9700EFB3E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AD7F2754404A04AD74C2648 /* Pods-PairedDatingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HN2YR2YZW9;
+				INFOPLIST_FILE = PairedDatingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VNarayan.PairedDatingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PairedDating;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B06AC262285FA9400EFB3E0 /* Build configuration list for PBXProject "PairedDating" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B06AC512285FA9700EFB3E0 /* Debug */,
+				2B06AC522285FA9700EFB3E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B06AC532285FA9700EFB3E0 /* Build configuration list for PBXNativeTarget "PairedDating" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B06AC542285FA9700EFB3E0 /* Debug */,
+				2B06AC552285FA9700EFB3E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B06AC562285FA9700EFB3E0 /* Build configuration list for PBXNativeTarget "PairedDatingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B06AC572285FA9700EFB3E0 /* Debug */,
+				2B06AC582285FA9700EFB3E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B06AC592285FA9700EFB3E0 /* Build configuration list for PBXNativeTarget "PairedDatingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B06AC5A2285FA9700EFB3E0 /* Debug */,
+				2B06AC5B2285FA9700EFB3E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B06AC232285FA9400EFB3E0 /* Project object */;
+}
