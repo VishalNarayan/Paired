@@ -14,3 +14,8 @@ Allowing the user to add a gender preference (i.e. stating whether they are look
 Adding a "Forgot Password?" option
 Smoother navigation between screens
 Moving text field to show if it is being blocked by the keyboard
+
+Here are some screenshots of the application:
+<kbd><img src="Images/Home.PNG" width="250"></kbd> <kbd><img src="Images/Login.PNG" width="250"></kbd><kbd><img src="Images/Signup.PNG" width="250"></kbd>
+<kbd><img src="Images/SetUpProfile.PNG" width="250"></kbd> <kbd><img src="Images/Profile.PNG" width="250"></kbd>
+<br>
