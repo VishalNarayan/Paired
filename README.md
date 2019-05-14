@@ -8,7 +8,7 @@ The app's background image and logo are inspired by the Paired logo displayed on
 
 <b>To run the application, download the zip file and open the file PairedDating.xcworkspace. Trying to run PairedDating.xcodeproj will result in an error.</b>
 
-I spent ten hours getting this application ready. Given more time, here are some more updates I would pursue:
+I spent a total of ten hours getting this application ready. Given more time, here are some more updates I would pursue:
 <ul>
   <li>Allowing the user to add a photo to their profile</li>
   <li>Allowing the user to add a gender preference (i.e. stating whether they are looking for males, females, etc.)</li>
