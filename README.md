@@ -9,11 +9,13 @@ The app's background image and logo are inspired by the Paired logo displayed on
 <b>To run the application, download the zip file and open the file PairedDating.xcworkspace. Trying to run PairedDating.xcodeproj will result in an error.</b>
 
 I spent ten hours getting this application ready. Given more time, here are some more updates I would pursue:
-Allowing the user to add a photo to their profile
-Allowing the user to add a gender preference (i.e. stating whether they are looking for males, females, etc.)
-Adding a "Forgot Password?" option
-Smoother navigation between screens
-Moving text field to show if it is being blocked by the keyboard
+<ul>
+  <li>Allowing the user to add a photo to their profile</li>
+  <li>Allowing the user to add a gender preference (i.e. stating whether they are looking for males, females, etc.)</li>
+  <li>Adding a "Forgot Password?" option</li>
+  <li>Smoother navigation between screens</li>
+  <li>Moving text field to show if it is being blocked by the keyboard</li>
+</ul>
 
 <i>Here are some screenshots of the application: </i>
 <br>
