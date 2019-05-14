@@ -4,7 +4,7 @@ The iOS application Paired Dating allows users to create a very simple profile t
 
 Once logged in, if the user has not yet set up a profile, the app will take them to a screen where they can enter their name, birthdate, and gender. Upon completion, the user is taken back to their profile screen, which will display their info (which is also stored in Firebase). 
 
-The app's background image and logo are inspired by the Paired logo displayed on AngelList. In accordance with the logo, the color scheme is predominantly comprised of pastel green and white. 
+The app's background image and logo are inspired by the Paired logo displayed on AngelList. The background image contains a grid of pears, which is overlayed by a dimming factor. In accordance with the logo, the color scheme is predominantly comprised of pastel green and white. 
 
 <b>To run the application, download the zip file and open the file PairedDating.xcworkspace. Trying to run PairedDating.xcodeproj will result in an error.</b>
 
