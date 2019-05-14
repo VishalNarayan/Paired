@@ -28,6 +28,7 @@ class SetUpProfileViewController: UIViewController{
             gender = genderTextField.text!
             genders[genders.count-1] = gender
             genderPicker.reloadAllComponents()
+            print("hereeerer\n")
         }
         else {
             gender = "Other"
@@ -40,9 +41,18 @@ class SetUpProfileViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        fullNameTextField.backgroundColor = .clear
+        fullNameTextField.tintColor = .white
+        fullNameTextField.textColor = .white
+        genderTextField.backgroundColor = .clear
+        genderTextField.tintColor = .clear
+        genderTextField.textColor = .clear
+        
         genderPicker.dataSource = self
         genderPicker.delegate = self
         genderTextField.isHidden = true
+        
         genderTextField.addTarget(self, action: Selector("genderChanged"), for: .editingChanged)
         
         datePicker.setValue(UIColor.white, forKeyPath: "textColor")
@@ -83,6 +93,13 @@ class SetUpProfileViewController: UIViewController{
         //Dismiss keyboard
         fullNameTextField.resignFirstResponder()
         genderTextField.resignFirstResponder()
+        if genderTextField.text == "" {
+            genderPicker.selectRow(1, inComponent: 0, animated: true)
+            genderTextField.isHidden = true
+            genders[genders.count-1] = "Other"
+            gender = genders[1]
+            genderPicker.reloadAllComponents()
+        }
     }
     
     func updateProfileHandler (name: String, date: String, gender: String) {

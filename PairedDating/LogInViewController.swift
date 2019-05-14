@@ -19,6 +19,12 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailTextField.backgroundColor = .clear
+        emailTextField.tintColor = .white
+        emailTextField.textColor = .white
+        passwordTextField.backgroundColor = .clear
+        passwordTextField.tintColor = .white
+        passwordTextField.textColor = .white
     }
     
     @IBAction func back(_ sender: UIButton){
