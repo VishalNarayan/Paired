@@ -11,8 +11,8 @@ import Firebase
 
 class SetUpProfileViewController: UIViewController{
     
-
-
+    let userDefault = UserDefaults.standard
+    
     @IBOutlet weak var fullNameTextField: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var genderPicker: UIPickerView!
@@ -23,6 +23,7 @@ class SetUpProfileViewController: UIViewController{
     var genders = ["Female", "Male", "Other"]
     var gender = "Female"
     
+    //Called when genderTextField is being edited
     @objc func genderChanged() {
         if genderTextField.text != nil {
             gender = genderTextField.text!
@@ -35,28 +36,22 @@ class SetUpProfileViewController: UIViewController{
         }
     }
     
-    
-    let userDefault = UserDefaults.standard
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //Set text field colors
         fullNameTextField.backgroundColor = .clear
         fullNameTextField.tintColor = .white
         fullNameTextField.textColor = .white
         genderTextField.backgroundColor = .clear
         genderTextField.tintColor = .clear
         genderTextField.textColor = .clear
+        datePicker.setValue(UIColor.white, forKeyPath: "textColor")
         
         genderPicker.dataSource = self
         genderPicker.delegate = self
         genderTextField.isHidden = true
         
         genderTextField.addTarget(self, action: Selector("genderChanged"), for: .editingChanged)
-        
-        datePicker.setValue(UIColor.white, forKeyPath: "textColor")
-        
     }
     
     
@@ -64,15 +59,11 @@ class SetUpProfileViewController: UIViewController{
         if fullNameTextField.text != "" {
             //Upload info to database and take user to profile screen
             let name = fullNameTextField.text!
-            
             let formatter = DateFormatter()
             formatter.dateFormat = "MMMM dd, YYYY"
             let date = formatter.string(from: datePicker.date)
             
-            
-            print(date)
-            print(gender)
-            
+            //Sends user an alert to confirm entries
             let alertController = UIAlertController(title: "\nConfirm?\n\n", message: "Name: \(name)\n\n" + "Birthday: \(date)\n\n" + "Gender: \(gender)\n", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
                 self.updateProfileHandler(name: name, date: date, gender: self.gender)
@@ -89,8 +80,8 @@ class SetUpProfileViewController: UIViewController{
         }
     }
     
+    //Dismiss Keyboards if touched outside; also if Gender Field is empty, make some updates
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        //Dismiss keyboard
         fullNameTextField.resignFirstResponder()
         genderTextField.resignFirstResponder()
         if genderTextField.text == "" {
@@ -102,16 +93,16 @@ class SetUpProfileViewController: UIViewController{
         }
     }
     
+    //Called if user entries are confirmed
     func updateProfileHandler (name: String, date: String, gender: String) {
         let ref = Database.database().reference(fromURL: "https://paireddating-29596.firebaseio.com/")
         guard let uid = Auth.auth().currentUser?.uid else {
-            print(Auth.auth().currentUser?.uid)
             return
         }
         let usersReference = ref.child("Users").child(uid).child("Profile")
-        
         let values = ["Name": name, "Birthday": date, "Gender": gender]
         
+        //Load user profile info into database
         usersReference.updateChildValues(values, withCompletionBlock: {error,ref in
             if error != nil {
             print(error?.localizedDescription)
@@ -120,6 +111,7 @@ class SetUpProfileViewController: UIViewController{
     }
 }
 
+//Extension defines attributes about the Gender PickerView
 extension SetUpProfileViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

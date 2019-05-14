@@ -22,9 +22,9 @@ class RegisterViewController: UIViewController{
     
     @IBOutlet weak var signInButton: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Set text field colors
         emailTextField.backgroundColor = .clear
         emailTextField.tintColor = .white
         emailTextField.textColor = .white
@@ -35,26 +35,16 @@ class RegisterViewController: UIViewController{
         confirmPasswordTextField.tintColor = .white
         confirmPasswordTextField.textColor = .white
     }
-
-    
-    
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {
-        //todo: do some form validation on the email and password
         if let email = emailTextField.text, let pass = passwordTextField.text, let _ = confirmPasswordTextField.text {
             if passwordTextField.text == confirmPasswordTextField.text{
                 //REgister user w firebase
                 Auth.auth().createUser(withEmail: email, password: pass, completion: { (user, error) in
                     if error == nil {
+                        //Sends created user a verification email
                         Auth.auth().currentUser?.sendEmailVerification(completion: { (error) in
                             if error == nil {
-                                print("here????")
-                                
-                                
-                                
-                                print("I have done these")
-                                
-                                
                                 let alertController = UIAlertController(title: "Verify your email", message: "A verification link has been sent to your email address.", preferredStyle: .alert)
                                 alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (_) in
                                     self.performSegue(withIdentifier: "back", sender: self)
@@ -62,10 +52,9 @@ class RegisterViewController: UIViewController{
                                 self.present(alertController, animated: true)
                             }
                             else {
-                                print(error?.localizedDescription)
-                            }
-                        })
-                        //Sign out user immediately
+                                print(error?.localizedDescription)}})
+                        
+                        //Once verification email is sent, sign out user immediately
                         do {
                             try Auth.auth().signOut()
                         } catch let signOutError as NSError {
@@ -79,8 +68,6 @@ class RegisterViewController: UIViewController{
                         self.present(alertController, animated: true)
                     }
                 })
-
-                
             }else {
                 //Error: check error and show message
                 let alertController = UIAlertController(title: "Error", message: "Passwords do not match!", preferredStyle: .alert)
@@ -90,14 +77,11 @@ class RegisterViewController: UIViewController{
             }
         }
     }
- 
     
+    //Dismiss Keyboards if touched outside
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        //Dismiss keyboard
         emailTextField.resignFirstResponder()
         passwordTextField.resignFirstResponder()
         confirmPasswordTextField.resignFirstResponder()
     }
-    
-    
 }

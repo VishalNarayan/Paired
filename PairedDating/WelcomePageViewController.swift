@@ -15,20 +15,19 @@ class WelcomePageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
     override func viewDidAppear(_ animated: Bool) {
+        //If there is already a signed in user, take them straight to their profile screen.
         if userDefault.bool(forKey: "userSignedIn"){
             performSegue(withIdentifier: "profile", sender: self)
         }
     }
     
-    
     @IBAction func login(_ sender: UIButton) {
         self.performSegue(withIdentifier: "login", sender: self)
     }
     
-    
     @IBAction func register(_ sender: UIButton) {
         self.performSegue(withIdentifier: "register", sender: self)
     }
-
 }
