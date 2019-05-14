@@ -6,7 +6,7 @@ Once logged in, if the user has not yet set up a profile, the app will take them
 
 The app's background image and logo are inspired by the Paired logo displayed on AngelList. In accordance with the logo, the color scheme is predominantly comprised of pastel green and white. 
 
-To run the application, download the zip file and open the file PairedDating.xcworkspace. Trying to run PairedDating.xcodeproj will result in an error. 
+<b>To run the application, download the zip file and open the file PairedDating.xcworkspace. Trying to run PairedDating.xcodeproj will result in an error.</b>
 
 I spent ten hours getting this application ready. Given more time, here are some more updates I would pursue:
 Allowing the user to add a photo to their profile
